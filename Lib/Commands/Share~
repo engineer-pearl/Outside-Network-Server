@@ -1,0 +1,15 @@
+/*
+* Run when file-request is recieved
+* Coppies title
+* Coppies Orin
+* Coppies Content
+* Coppies !tags
+* Creates RULES based on Orin and user input [Server rules may come into play here]
+* Coppies replies
+* Adds reply to end of replies file
+* Creates new Tags file
+* Adds to OPs Notes [In Posts folder] [Includes tags and snipit of text]
+* Adds to OPs other Notes [In post itself] [Includes tags and snipit of text]
+* Adds to previous Notes [In Posts folder] [Includes tags and snipit of text]
+* Adds to previous other Notes [In post itself] [Includes tags and snipit of text]
+*/

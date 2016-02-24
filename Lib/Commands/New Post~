@@ -1,0 +1,12 @@
+/*
+* Creates new post folder with post number
+* Creates new Title file
+* Creates new content file
+* Creates new !Tags file
+* Creates new Tags file
+* Creates new Orin file
+* Creates new RULES file
+* Creates new Notes file
+* Creates new replies file
+* Adds post to index
+*/
