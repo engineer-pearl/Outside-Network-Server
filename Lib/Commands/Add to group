@@ -1,20 +1,22 @@
-/*
-* Check if admin //Admin here is short for if they have permission to do this
-* 
-* ADMIN:
-***
-*       For ADD:
-**
-* Check usr permissions
-* - If they have the permissions
-* - - Contine
-* - If they don't
-* - - STOP
-**
-* Check if already in group
-* - If in group STOP
-* *
-* - If NOT in group:
+//Check if admin //Admin here is short for if they have permission to do this
+// ADMIN:
+
+//For ADD:
+{
+    //If they have permission to add users to the group
+    {
+        //Contine
+    }
+    //If they don't
+    {
+        //return appropriate error
+    }
+//If target user is in group
+{
+    //report to usr
+    //return appropriate error
+}
+//If NOT in group:
 * - - Continue
 **
 * - check if they requested access
