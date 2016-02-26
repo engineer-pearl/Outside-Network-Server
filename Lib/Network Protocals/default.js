@@ -1,0 +1,30 @@
+//This code allows you to synch up with the client and chooses the protocal
+//checks if server name or address
+
+//starts listening
+
+                //now connect
+//var0= ((config value for num try))
+//var1=0
+//loops retrys until either connection is successful or var1 = var0
+{
+    //for each failed test var1++
+    {
+        //if connection is successful
+        {
+           //request connection protocal
+           //adjust accordingly
+        }
+        //if connection fails
+        {
+            //ask if retry
+            //if user says yes
+            {
+                //var1=0
+            }
+            //if user says no
+            {
+                //return appropriate error
+            }
+        }
+}
