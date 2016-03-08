@@ -97,6 +97,4 @@ some newgroup(name)
 
 /*
 int findgroup
-{
-    idk how to check directories in javascript.
-}
+    

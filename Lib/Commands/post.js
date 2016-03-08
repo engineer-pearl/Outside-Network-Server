@@ -13,99 +13,112 @@
 
 
 /*
-* Creates new post folder with post number
-* Adds post to index
-* Creates new Title file
-* Creates new content file
-* Creates new !Tags file
-* Creates new Tags file
-* Indexes tags
-* Creates new Orin file
-* Creates new RULES file
-* Creates new Notes file
-* Creates new replies file
+int post()
+{
+    if (check_permissions(usr, "group", post, group) = 001)
+    {
+        Creates new post folder with post number
+        Adds post to index
+        Creates new Title file
+        Creates new content file
+        Creates new !Tags file
+        Creates new Tags file
+        Indexes tags
+        Creates new Orin file
+        Creates new RULES file
+        Creates new Notes file
+        Creates new replies file
+        return(020)
+    }
+    else
+    {
+        return(046)
+    }
 */
 
 //###########################################################
-//some addnotes(user, poster, post number, type, snipit) //maybe?
+/*
+some addnotes(user, poster, post number, type, snipit) //maybe?
 {
-    //if post exists
+    if post exists
     {
-        //add comment to comments
-        //add note w/ comment to post notes
-        //add note w/ comment to usr notes
+        add comment to comments
+        add note w/ comment to post notes
+        add note w/ comment to usr notes
     }
-    //else
+    else
     {
-        //report that user does not exist
+        report that user does not exist
     }
 }
-
-//some addnotes(user, poster, post number, type) //can i just make them one function? i don't remember!
+*/
+/*
+int addnotes(user, poster, post number, type) //can i just make them one function? i don't remember!
 {
-    //if post exists
+    if post exists
     {
-        //add note to post notes
-        //add note to usr notes
-        //if type=like
+        add note to post notes
+        add note to usr notes
+        if type=like
             {
-                //add one to like counter
+                add one to like counter
             }
     }
-    //else
+    else
     {
-        //report that user does not exist
+        report that user does not exist
     }
 }
-//#############################################################
-//some comment(user, poster, post number)
+*/
+/*
+int comment(user, poster, post number)
 {
-    //check RULES to see if comments allowed
-    //if allowed
+    check RULES to see if comments allowed
+    if allowed
     {
-        //create  variables from orin file
+        create  variables from orin file
         {
-                //var op
-                //var op-server
-                //var opn //orriginal post number
+                var op
+                var op-server
+                var opn //orriginal post number
         }
-        //var comment = [ask for input] //no i don't know how that works in javascript!
-        //var snipit = [20 char of comment] //no, i don't know how that works either.
-        //check if post still exists
-        //notes(user, poster, post number, comment, snipit) //okay i don't remember how to do that. this is why i'm just commenting in stuff for now
-        //if poster = op
+        var comment = [ask for input] //no i don't know how that works in javascript!
+        var snipit = [20 char of comment] //no, i don't know how that works either.
+        check if post still exists
+        notes(user, poster, post number, comment, snipit) //okay i don't remember how to do that. this is why i'm just commenting in stuff for now
+        if poster = op
         {
-            //nothing here
+            nothing here
         }
-        //else
+        else
         {
-            //if op-server = @server //@server is the global value for server, right?
+            if op-server = @server //@server is the global value for server, right?
             {
-                //comment(user, op, orriginal post number, comment)
+                comment(user, op, orriginal post number, comment)
             }
-            //else
+            else
             {
-                //check if other server allowes comments //might not be enabled for the first version
-                //if other server allows comments
+                check if other server allowes comments //might not be enabled for the first version
+                if other server allows comments
                 {
-                    //send comment request to server
+                    send comment request to server
                 }
-                //else
+                else
                 {
-                    //report that op will not get the note
+                    report that op will not get the note
                 }
             }
         }
     }
-    //else
+    else
     {
-        //report that commenting is not enabled on this post
+        report that commenting is not enabled on this post
     }
 }
+*/
 
-//comment(user, op, orriginal post number, comment)
-//######################################################
-//some like (user, poster, post number)
+/*
+int like (user, poster, post number)
 {
     //check RULES to see if likes are allowed
         {
@@ -143,9 +156,10 @@
     {
         //report that likes are not allowed
     }
-}   
-//########################################################################
+}  
+*/ 
 
+/*
 //some share(user, poster, post number)
 {
     //variables from RULES
@@ -167,7 +181,6 @@
         }
         //else
         {
-            /*
             var reply = [ask for input]
             coppy title orin content !tags replies
             add reply to end of replies
@@ -179,12 +192,12 @@
                 var ***** //remember to finish making the list later
             }
             create RULES from Orin and User Input
-            */
-            //some addnotes(user, poster, post number, type, snipit)
+            addnotes(user, poster, post number, type, snipit)
         }
         }
     }
 }     
+*/
 /* If allowed:
 // Coppies title
 // Coppies Orin
