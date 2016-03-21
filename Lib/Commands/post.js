@@ -36,7 +36,6 @@ int post()
     }
 */
 
-//###########################################################
 /*
 some addnotes(user, poster, post number, type, snipit) //maybe?
 {
@@ -120,66 +119,59 @@ int comment(user, poster, post number)
 /*
 int like (user, poster, post number)
 {
-    //check RULES to see if likes are allowed
+    check RULES to see if likes are allowed
         {
-        //addnotes(user, poster, post number, "like")
-        //create  variables from orin file
+        addnotes(user, poster, post number, "like")
+        create  variables from orin file
         {
-                //var op
-                //var op-server
-                //var opn
+                var op
+                var op-server
+                var opn
         }
-        //if user=op && op-server=@server
+        if user=op && op-server=@server
         {
-            //do the thing that ends the function
+            return(20) //done
         }
-        //else
+        else
         {
-            //if op-server=@server
+            if op-server=@server
             {
-                //addnotes(op, poster, opn, "like")
+                addnotes(op, poster, opn, "like")
             }
-            //else
+            else
             {
-                //if op-server allows likes
-                {
-                    //send like request
-                }
-                //else
-                {
-                    //report that OP will not recieve a like
-                }
+                like_request()
+                return (022)
             }
         }
     }
-    //else
+    else
     {
-        //report that likes are not allowed
+        return(048) //not allowed
     }
 }  
 */ 
 
 /*
-//some share(user, poster, post number)
+int share(user, poster, post number)
 {
-    //variables from RULES
+    variables from RULES
     {
-        //var sharable
-        //var crossshare
+        var sharable
+        var crossshare
     }
-    //var sharable=no
+    var sharable=no
     {
-        //report that the post can not be shared
-        //end the function
+        return (48) //not allowed
     }
-    //else
+    else
     {
-        //if (op-server =/= @server) && (croshare = no)
+        if (op-server =/= @server) && (croshare = no)
         {
-            //report that the post cannot be shared between servers
-            //end function
+            report that the post cannot be shared between servers
+            end function
         }
-        //else
+        else
         {
             var reply = [ask for input]
             coppy title orin content !tags replies
@@ -198,18 +190,20 @@ int like (user, poster, post number)
     }
 }     
 */
-/* If allowed:
-// Coppies title
-// Coppies Orin
-// Coppies Content
-// Coppies !tags
-// Creates RULES based on Orin and user input [Server rules may come into play here]
-// Coppies replies
-// Adds reply to end of replies file
-// Creates new Tags file
-// // Checks if OP
-// If not also do dashes
-// - Adds to OPs Notes [In Posts folder] [Includes tags and snipit of text]
-// - Adds to OPs other Notes [In post itself] [Includes tags and snipit of text]
-// Adds to previous Notes [In Posts folder] [Includes tags and snipit of text]
-*/ Adds to previous other Notes [In post itself] [Includes tags and snipit of text]
+/*
+ If allowed:
+ Coppies title
+ Coppies Orin
+ Coppies Content
+ Coppies !tags
+ Creates RULES based on Orin and user input [Server rules may come into play here]
+ Coppies replies
+ Adds reply to end of replies file
+ Creates new Tags file
+  Checks if OP
+ If not also do dashes
+ - Adds to OPs Notes [In Posts folder] [Includes tags and snipit of text]
+ - Adds to OPs other Notes [In post itself] [Includes tags and snipit of text]
+ Adds to previous Notes [In Posts folder] [Includes tags and snipit of text]
+ Adds to previous other Notes [In post itself] [Includes tags and snipit of text]
+*/

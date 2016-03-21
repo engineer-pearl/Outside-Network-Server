@@ -33,8 +33,9 @@ addusr(usenum):
     }
 }
 */
+
 /*
-int removeusr(usenum)
+int removeusr(usenum, group)
 {
 
 }

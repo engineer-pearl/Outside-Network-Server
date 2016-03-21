@@ -3,16 +3,22 @@ Value	Description
 
     //Internal //unique
 
+000 no
+001 yes
+002-019 unassigned
+
         //internal success //unique
 020 Done
 021 Post created
 022 Note created
+023 Permissions accepted
+024 request submitted
 
         //internal error //unique
 
 041 user not recognized
 042 command not found
-043 
+043 forced quit
 044 post not found
 045 not in group
 046 missing permissions

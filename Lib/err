@@ -9,8 +9,8 @@ Value	Description
 
         //internal success //unique
 020 Done
-021 Post created
-022 Note created
+021 Request approved //included but not used
+022 Done with request submitted
 023 Permissions accepted
 024 request submitted
 
@@ -23,6 +23,7 @@ Value	Description
 045 not in group
 046 missing permissions
 047 Method not allowed
+048 action not allowed
 
 051 Already exists
 052 Two results found
