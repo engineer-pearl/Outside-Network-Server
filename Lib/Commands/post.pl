@@ -1,6 +1,8 @@
-//all post-based commands moved to here
-//notes verry much based on vague memory of c++
-//i think it goes "something function()" so that's what i'm going to do
+#!/usr/bin/perl
+
+#all post-based commands moved to here
+#notes verry much based on vague memory of c++
+#i think it goes "something function()" so that's what i'm going to do
 
 /*
 **Included:
@@ -36,9 +38,8 @@ int post()
     }
 */
 
-//###########################################################
 /*
-some addnotes(user, poster, post number, type, snipit) //maybe?
+some addnotes(user, poster, post number, type, snipit) #maybe?
 {
     if post exists
     {
@@ -53,7 +54,7 @@ some addnotes(user, poster, post number, type, snipit) //maybe?
 }
 */
 /*
-int addnotes(user, poster, post number, type) //can i just make them one function? i don't remember!
+int addnotes(user, poster, post number, type) #can i just make them one function? i don't remember!
 {
     if post exists
     {
@@ -80,25 +81,25 @@ int comment(user, poster, post number)
         {
                 var op
                 var op-server
-                var opn //orriginal post number
+                var opn #orriginal post number
         }
-        var comment = [ask for input] //no i don't know how that works in javascript!
-        var snipit = [20 char of comment] //no, i don't know how that works either.
+        var comment = [ask for input] #no i don't know how that works in javascript!
+        var snipit = [20 char of comment] #no, i don't know how that works either.
         check if post still exists
-        notes(user, poster, post number, comment, snipit) //okay i don't remember how to do that. this is why i'm just commenting in stuff for now
+        notes(user, poster, post number, comment, snipit) #okay i don't remember how to do that. this is why i'm just commenting in stuff for now
         if poster = op
         {
             nothing here
         }
         else
         {
-            if op-server = @server //@server is the global value for server, right?
+            if op-server = @server #@server is the global value for server, right?
             {
                 comment(user, op, orriginal post number, comment)
             }
             else
             {
-                check if other server allowes comments //might not be enabled for the first version
+                check if other server allowes comments #might not be enabled for the first version
                 if other server allows comments
                 {
                     send comment request to server
@@ -131,7 +132,7 @@ int like (user, poster, post number)
         }
         if user=op && op-server=@server
         {
-            return(20) //done
+            return(20) #done
         }
         else
         {
@@ -148,7 +149,7 @@ int like (user, poster, post number)
     }
     else
     {
-        return(048) //not allowed
+        return(048) #not allowed
     }
 }  
 */ 
@@ -163,7 +164,7 @@ int share(user, poster, post number)
     }
     var sharable=no
     {
-        return (48) //not allowed
+        return (48) #not allowed
     }
     else
     {
@@ -182,7 +183,7 @@ int share(user, poster, post number)
                 var op
                 var op-server
                 var opn
-                var ***** //remember to finish making the list later
+                var ***** #remember to finish making the list later
             }
             create RULES from Orin and User Input
             addnotes(user, poster, post number, type, snipit)

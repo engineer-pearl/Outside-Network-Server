@@ -1,3 +1,4 @@
+#!/usr/bin/perl
 
 /*
 block(usr, usr2, group)
@@ -17,6 +18,6 @@ string get_usename(usenum)
 /*
 int set_privs
 {
-//okay I need to do some more defining first
+//okay I need to do some more defining first.
 }
 */
